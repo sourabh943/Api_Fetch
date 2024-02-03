@@ -1,0 +1,182 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.text{
+  text-align: center;
+}
+.tab{
+  display: none;
+  
+}
+.tabs {
+  text-align: center; /* Center-align the tab buttons */
+  overflow: hidden;
+  
+}
+.tabs button {
+  
+  background-color: #d1d1d1;
+  color: #000000;
+  border: none;
+  padding: 20px 70px;
+  margin-right: 0;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 20px;
+}
+.tabs button:not(:last-child) {
+  margin-right: -5px; /* Remove space between buttons */
+  
+}
+.tabs button:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; 
+}
+.tabs button:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; 
+}
+.tabs button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+.image img {
+  opacity: 0;
+  width: 20px; /* Adjust image width as needed */
+  height: 20px;
+  margin-right: 5px; /* Add spacing between image and text */
+  
+}
+.image span {
+  font-size: 14px;
+}
+
+.image:hover img {
+  opacity: 1; /* Show the image on hover */
+}
+.active-tab {
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+.product-container {
+  display: flex;
+  height: 70px; 
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow cards to wrap */
+  border-radius: 10px ;
+}
+.product-card {
+  width: 200px; /* Set a fixed width for the card */
+  
+  border-radius: 10px;
+  margin: 10px;
+
+  position: relative; /* Set position to relative */
+  border: 1px solid #ccc;
+
+  flex: 0 1 calc(25% - 20px); /* Set the width of each card */
+  box-sizing: border-box; /* Include padding and border in the width */
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+ 
+  width: auto; /* Cover entire width of card */
+  height: 300px; /* Set a fixed height */
+  border-radius: 10px;
+}
+
+.product-card .badge {
+  position: absolute; /* Set position to absolute */
+  top: 5px; /* Position from top */
+  left: 5px; /* Position from left */
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+
+.product-title {
+  font-size: 25px;
+  margin-left: 10px; 
+}
+
+.vendor-name {
+  margin-top: 25px;
+  margin-left: 20px;
+margin-right: 10px;
+}
+.T_V{
+  display: inline-flex;
+  line-height: 5px;
+}
+
+.price{
+  font-size: 15px;
+  margin-left: 10px;
+}
+.second{
+  line-height: 5px;
+  display: inline-flex;
+
+}
+.compare{
+  color: rgb(143, 125, 125);
+  text-decoration:line-through;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.discount{
+  color: red;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.product-card button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart-btn button{
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+  background-color: #000000;
+}
+.product-card button:hover {
+  background-color: #ccc;
+  color: #000000;
+}
+@media (max-width: 992px) {
+  .product-card {
+    flex: 0 1 calc(33.33% - 20px); /* Set the width of each card for screens with a maximum width of 992px */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    flex: 0 1 calc(50% - 20px); /* Set the width of each card for screens with a maximum width of 768px */
+  }
+}
+
+@media (max-width: 576px) {
+  .product-card {
+    flex: 0 1 calc(100% - 20px); /* Set the width of each card for screens with a maximum width of 576px */
+  }
+}
+
+
+.symbol {
+  display: none; /* Initially hide the symbol */
+}
+
+.active-symbol {
+  display: inline; /* Show the symbol when the tab is active */
+}

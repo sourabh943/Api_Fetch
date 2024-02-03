@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Switching Layout</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="top">
+        <h1 class="text">SELECT YOUR CHOICE</h1>
+    </div>
+  <div class="tabs">
+    
+    <button class="image" onclick="showTab('men')">
+        <img src="icons8-man-face-32 (1).png" alt="Image"> Men
+        
+    </button>
+    <button class="image" onclick="showTab('women')">
+        <img src="icons8-woman-face-32.png" alt="Image">Women
+        
+    </button>
+    <button class="image" onclick="showTab('kids')">
+        <img src="icons8-baby-face-24.png" alt="Image">Kids
+        </button>
+  </div>
+
+  <div id="men" class="tab active-tab"></div>
+  <div id="women" class="tab"></div>
+  <div id="kids" class="tab"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
